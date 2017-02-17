@@ -1,9 +1,13 @@
-<%=form_for User.new do |f| %>
-  <%=f.label :email %>
-  <%=f.text_field :email %>
-  <%=f.label :password %>
-  <%=f.password_field :password %>
-  <%=f.label :password_confirmation %>
-  <%=f.password_field :password_confirmation %>
-  <%=f.submit "Sign Up" %>
-<%end%>
+<div class="container bluebox">
+  <%=form_for User.new do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+    <%= f.label :admin %>
+    <%= f.check_box :admin %><br><br>
+    <%= f.submit "Sign Up", class: "card" %>
+  <%end%>
+</div>

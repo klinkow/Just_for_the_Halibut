@@ -14,9 +14,14 @@
     <nav>
       <div class="nav-wrapper">
         <a href="/" class="brand-logo center">Just for the Halibut</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <ul id="nav-mobile" class="left">
           <li><a href="/products">Products</a></li>
           <li><a href="/">About</a></li>
+          <% if session[:user_id] %>
+          <li><a href="/log-out">Log Out</a></li>
+          <% else %>
+          <li><a href="/log-in">Log In</a></li>
+          <% end %>
           <li>    <% if flash[:notice] -%>
                 <div class="flash"><%= flash[:notice] %></div>
               <% end %>
