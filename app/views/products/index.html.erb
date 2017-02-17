@@ -1,11 +1,16 @@
-<h1>products</h1>
+<h2>Products:</h2>
 
-<ul>
+<div class="container">
   <% @products.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %></li>
+  <div class="card">
+    <ul>
+        <li><h4><%= link_to product.name, product_path(product) %></h4></li>
+        <li><h5>$<%= product.price.round(2) %></h5></li>
+    </ul>
+  </div>
   <% end %>
-</ul>
-
-
-
-<%= link_to "Add new product", new_product_path %>
+</div>
+<br>
+<div class="container">
+  <%= link_to "Add new product", new_product_path, class: "bluebox"%>
+</div>

@@ -3,7 +3,7 @@
   <head>
     <title>JustForTheHalibut</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Pangolin|Slabo+27px" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,18 +13,19 @@
 
     <nav>
       <div class="nav-wrapper">
-        <a href="/" class="brand-logo center">Just For The Halibut</a>
+        <a href="/" class="brand-logo center">Just for the Halibut</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="/products">Products</a></li>
           <li><a href="/">About</a></li>
+          <li>    <% if flash[:notice] -%>
+                <div class="flash"><%= flash[:notice] %></div>
+              <% end %>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <% if flash[:notice] -%>
-      <br><br>
-      <div class="flash"><%= flash[:notice] %></div>
-    <% end %>
+
 
     <%= yield %>
   </body>

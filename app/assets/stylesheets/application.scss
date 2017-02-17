@@ -2,3 +2,70 @@
 $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("green", "lighten-3") !default;
 @import 'materialize';
+
+$seafoam: rgba(85, 195, 140, .85);
+$skyblue: rgba(102, 140, 255, .70);
+
+
+
+body {
+  font-family: 'Pangolin', cursive;
+  font-family: 'Slabo 27px', serif;
+  background-image: url("fishes.jpg");
+}
+
+h2 {
+  text-align: center;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  color: blue;
+}
+
+.card {
+  text-align: center;
+  border-radius: 15px;
+  background-color: $seafoam;
+  border: 1px solid green;
+  width: 31%;
+  margin: 18px 0;
+  height: auto;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
+
+.card-detail {
+  text-align: center;
+  border-radius: 15px;
+  background-color: $seafoam;
+  border: 1px solid green;
+  width: 31%;
+  height: auto;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  margin: 18px auto;
+}
+
+.flash {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: lightgreen;
+  border: 1px solid green;
+  color: red;
+  width: 200px;
+  height: 45px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bluebox {
+  color: darkblue;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  background-color: $skyblue;
+  border-radius: 15px;
+  border: 2px solid $skyblue;
+  padding: 20px;
+  margin: 25px auto;
+}
