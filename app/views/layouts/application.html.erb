@@ -11,6 +11,16 @@
 
   <body>
 
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo center">Just For The Halibut</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="/products">Products</a></li>
+          <li><a href="/">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <% if flash[:notice] -%>
       <br><br>
       <div class="flash"><%= flash[:notice] %></div>
