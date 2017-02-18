@@ -1,12 +1,11 @@
-<div class="container bluebox"
-  <%=form_tag log_in_path do%>
-    <%=label_tag :email %>
-    <%=text_field_tag :email %>
-    <%=label_tag :password %>
-    <%=password_field_tag :password %>
-    <%=submit_tag "Log in", class: "card" %>
-  <%end%>
+<div class="container bluebox">
+  <%= form_tag log_in_path do%>
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    <%= submit_tag "Log in", class: "card" %> <%= link_to "New User", new_user_path, class: "yellowbox" %>
+  <% end %>
 
 
-  <%= link_to "New User", new_user_path, class: "card" %>
 </div>

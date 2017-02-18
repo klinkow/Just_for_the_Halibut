@@ -1,10 +1,13 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
+    @current_user = User.find(session[:user_id])
+
   end
 
   def show
     @product = Product.find(params[:id])
+    @current_user = User.find(session[:user_id])
   end
 
   def new
@@ -25,7 +28,7 @@ class ProductsController < ApplicationController
   end
 
   def update
-    @product= Product.find(params[:id])
+    @product = Product.find(params[:id])
     if @product.update(product_params)
       flash[:notice] = "Product updated."
       redirect_to products_path

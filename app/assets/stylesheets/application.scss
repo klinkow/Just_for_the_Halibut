@@ -5,6 +5,7 @@ $secondary-color: color("green", "lighten-3") !default;
 
 $seafoam: rgba(85, 195, 140, .85);
 $skyblue: rgba(102, 140, 255, .8);
+$mustard: rgba(255, 214, 51, .8);
 
 
 
@@ -32,7 +33,7 @@ h2 {
 }
 
 .card-detail {
-  text-align: center;
+  padding: 0 15px;
   border-radius: 15px;
   background-color: $seafoam;
   border: 1px solid green;
@@ -40,6 +41,9 @@ h2 {
   height: auto;
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   margin: 18px auto;
+  h3 {
+    text-align: center;
+  }
 }
 
 .flash {
@@ -55,7 +59,7 @@ h2 {
   margin-left: 20px;
 }
 
-.container {
+.container, .button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -69,4 +73,14 @@ h2 {
   border: 2px solid $skyblue;
   padding: 20px;
   margin: 25px auto;
+}
+
+.yellowbox {
+  padding: 5px;
+  margin: 5px;
+  color: blue;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  background-color: $mustard;
+  border-radius: 5px;
+  border: 1px solid yellow;
 }

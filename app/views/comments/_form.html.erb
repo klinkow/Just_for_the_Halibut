@@ -1,0 +1,9 @@
+<div class="container bluebox">
+  <%= form_for [@product, @comment] do |b| %>
+    <%= b.label :text %>
+    <%= b.text_field :text %>
+    <%= b.label :author %>
+    <%= b.text_field :author %>
+    <%= b.submit "Submit", class: "card" %>
+  <%end%>
+</div>

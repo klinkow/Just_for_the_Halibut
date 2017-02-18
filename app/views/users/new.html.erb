@@ -6,8 +6,8 @@
     <%= f.password_field :password %>
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
-    <%= f.label :admin %>
-    <%= f.check_box :admin %><br><br>
+    <%= f.check_box :admin %>
+    <%= f.label 'admin', id:'admin' %><br>
     <%= f.submit "Sign Up", class: "card" %>
   <%end%>
 </div>
