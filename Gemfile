@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'materialize-sass'
+gem 'factory_girl'
+gem 'factory_girl_rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
