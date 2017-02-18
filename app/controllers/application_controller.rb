@@ -7,4 +7,10 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
+  def admin
+    @current_user = User.find(session[:user_id]) rescue nil
+    @admin = @current_user.admin rescue nil
+  end
+  helper_method :admin
+
 end
