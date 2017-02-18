@@ -1,24 +1,48 @@
-# README
+# _Just for the Halibut_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+#### _A website for viewing fish products. Site features user authentication so admins can edit._
 
-* Ruby version
+#### By _*Bill Klinkow*_
 
-* System dependencies
+## Technologies Used
 
-* Configuration
+Application: Ruby, Rails, Active Record, bCrypt<br>
+Testing: Rspec, Capybara<br>
+Database: Postgres
 
-* Database creation
+Installation
+------------
 
-* Database initialization
+```
+$ git clone https://github.com/klinkow/Just_for_the_Halibut
+```
 
-* How to run the test suite
+Install required gems:
+```
+$ bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Create databases:
+```
+rake db:create
+rake db:migrate
+rake db:test:prepare
+```
 
-* Deployment instructions
+Start the webserver:
+```
+$ rails s
+```
 
-* ...
+Navigate to `localhost:3000` in browser.
+
+## Support and contact details
+
+_If you run into any issues please contact klinkow@gmail.com_
+
+## License
+-------
+
+(C) 2017 **Bill Klinkow**
