@@ -1,13 +1,13 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.all
-    @current_user = User.find(session[:user_id])
+
 
   end
 
   def show
     @product = Product.find(params[:id])
-    @current_user = User.find(session[:user_id])
+
   end
 
   def new

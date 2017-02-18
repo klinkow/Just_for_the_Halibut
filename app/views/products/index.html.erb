@@ -12,7 +12,7 @@
 </div>
 <br>
 <div class="container">
-  <% if @current_user.admin %>
+  <% if current_user.admin %>
     <%= link_to "Add new product", new_product_path, class: "bluebox"%>
   <% end %>
 </div>
